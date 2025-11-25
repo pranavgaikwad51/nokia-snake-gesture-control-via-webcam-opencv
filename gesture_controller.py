@@ -29,7 +29,7 @@ class GestureController:
             min_detection_confidence=0.5
         )
         
-        # Gesture state tracking
+        # Gesture state tracking--------
         self.previous_position = None
         self.gesture_threshold = 0.05
         self.current_direction = None
@@ -137,4 +137,5 @@ class GestureController:
         """Reset gesture detection state"""
         self.previous_position = None
         self.current_direction = None
+
         self.gesture_cooldown = 0
